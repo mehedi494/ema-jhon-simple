@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState } from 'react';
+
 
 import './Summary.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -9,16 +9,20 @@ const Summary = props => {
     const { cart } = props;
 // const [ price, SetPrice]=useState([])
 //     console.log(cart);
-    let total = 0;
-    for (const product of cart) {
-        total = total + product.price;
-        
-        
-        
-        // console.log(newCart);
-        
+    
 
-    }
+// let total = 0;
+    // for (const product of cart) {
+    //     total = total + product.price;
+      
+    // }
+    //........... REDUCER USE......................
+    
+//     const totalReducer = (previous, product) => previous + product.price;
+// const total = cart.reduce(totalReducer,0)
+    // 
+    const total = cart.reduce((previous,product)=>previous+ product.price,0)
+// ...............................................................................
     const Shipping = total * 5/ 100
     const grossTotal = total + Shipping
     const EstTxt = total * 5 / 100
