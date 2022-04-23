@@ -1,0 +1,47 @@
+.summary-Container{
+position: fixed;
+right: 50px;
+
+}
+.twoColumContainer div p{
+margin-top: 0px;
+padding: 0px;
+text-align: start;
+margin-left: 20px;
+}
+.twoColumElement  {
+    
+display: grid;
+grid-template-columns: 2fr 1fr;
+font-weight: 500;
+}
+.twoColumElement h3{
+    color:  green;
+    text-align: start;
+    margin-left: 20px;
+}
+.summary-Container h1,h3{
+margin: 0;
+padding: 0;
+}
+.review-order-btn {
+    font-size: 20px;
+    padding: 10px 80px;
+    background-color: rgb(169, 187, 4);
+    color: white;
+    outline: 1px solid lightblue;
+    border: 1px solid lightblue;
+    cursor: pointer;
+    margin-top: 20px;
+   
+
+}
+.review-order-btn:hover{
+    background-color: rgb(38, 150, 48);
+}
+.review-order-btn:focus{
+    background-color: black;
+}
+.border{
+    border-bottom: 2px solid lightgray;
+}

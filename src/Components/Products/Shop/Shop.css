@@ -1,0 +1,10 @@
+.products-container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    width: 90%;
+    margin: auto;
+    grid-gap: 10px;
+    position: relative;
+    
+    
+}
