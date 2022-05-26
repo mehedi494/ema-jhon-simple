@@ -1,5 +1,6 @@
 // use local storage as your db for now
 const addToDb = id => {
+  // console.log(id);
   const exists = getDb();
   let shopping_cart = {};
   if (!exists) {
